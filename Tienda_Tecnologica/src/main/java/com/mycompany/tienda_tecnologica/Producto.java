@@ -16,10 +16,10 @@ class Producto {
     private double precio;
     private String descripcion;
     private Caracteristicas caracteristicas;
-    private List<String> imagenes;
+    private String [] imagenes;
     private int inventario;
 
-    public Producto(int id, String nombre, double precio, String descripcion, Caracteristicas caracteristicas, List<String> imagenes, int inventario) {
+    public Producto(int id, String nombre, double precio, String descripcion, Caracteristicas caracteristicas, String[] imagenes, int inventario) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
@@ -69,13 +69,15 @@ class Producto {
         this.caracteristicas = caracteristicas;
     }
 
-    public List<String> getImagenes() {
+    public String[] getImagenes() {
         return imagenes;
     }
 
-    public void setImagenes(List<String> imagenes) {
+    public void setImagenes(String[] imagenes) {
         this.imagenes = imagenes;
     }
+
+
 
     public int getInventario() {
         return inventario;
@@ -84,6 +86,25 @@ class Producto {
     public void setInventario(int inventario) {
         this.inventario = inventario;
     }
+    public void reducirInventario(int cantidad) {
+        if (cantidad <= inventario) {
+            inventario -= cantidad;
+        } else {
+            System.out.println("Inventario insuficiente.");
+        }
+    }
+
+    public void aumentarInventario(int cantidad) {
+        inventario += cantidad;
+    }
+
+    public void mostrarDetalles() {
+        System.out.println("Producto: " + nombre + " - Precio: $" + precio);
+        System.out.println("Descripción: " + descripcion);
+        caracteristicas.mostrarDetalles();
+    }
+
+    }
+
     
-    
-}
+

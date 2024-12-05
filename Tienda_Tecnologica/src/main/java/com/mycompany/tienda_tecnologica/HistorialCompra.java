@@ -43,5 +43,9 @@ class HistorialCompra {
         this.fecha = fecha;
     }
     
-    
+      public void mostrarDetalles() {
+        System.out.println("Compra - Producto ID: " + productoId + ", Cantidad: " + cantidad + ", Fecha: " + fecha);
+    }
 }
+    
+

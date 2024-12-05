@@ -65,6 +65,18 @@ class Usuario {
         this.historialCompras = historialCompras;
     }
     
-    
+      public void realizarCompra(Producto producto, int cantidad, String fecha) {
+        historialCompras.add(new HistorialCompra(producto.getId(), cantidad, fecha));
+    }
+
+    public void listarHistorialCompras() {
+        historialCompras.forEach(HistorialCompra::mostrarDetalles);
+    }
+
+    public void mostrarDetalles() {
+        System.out.println("Usuario: " + nombre + " - Email: " + email);
+        direccion.mostrarDireccion();
+        listarHistorialCompras();
+    }
     
 }

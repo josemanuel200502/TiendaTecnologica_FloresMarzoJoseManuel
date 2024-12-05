@@ -53,6 +53,9 @@ class Direccion {
         this.pais = pais;
     }
     
-    
-    
+        public void mostrarDireccion() {
+        System.out.println("Dirección: " + calle + " " + numero + ", " + ciudad + ", " + pais);
+    }
 }
+    
+
