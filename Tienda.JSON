@@ -1,0 +1,97 @@
+{
+    "tienda": {
+      "nombre": "JM Technologies",
+      "categorias": [
+        {
+          "id": 1,
+          "nombre": "Tarjetas Gráficas",
+          "productos": [
+            {
+              "id": 201,
+              "nombre": "NVIDIA RTX 3080",
+              "precio": 699.99,
+              "descripcion": "Potente tarjeta gráfica para gaming y diseño.",
+              "caracteristicas": {
+                "memoria": "10 GB GDDR6X",
+                "frecuencia": "1.44 GHz",
+                "puertos": "HDMI, DisplayPort"
+              },
+              "imagenes": ["rtx3080_1.jpg", "rtx3080_2.jpg"],
+              "inventario": 15
+            },
+            {
+              "id": 202,
+              "nombre": "AMD RX 6800",
+              "precio": 579.99,
+              "descripcion": "Tarjeta gráfica de alto rendimiento.",
+              "caracteristicas": {
+                "memoria": "16 GB GDDR6",
+                "frecuencia": "1.82 GHz",
+                "puertos": "HDMI, USB-C"
+              },
+              "imagenes": ["rx6800_1.jpg", "rx6800_2.jpg"],
+              "inventario": 10
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "nombre": "Memorias RAM",
+          "productos": [
+            {
+              "id": 301,
+              "nombre": "Corsair Vengeance 16GB",
+              "precio": 89.99,
+              "descripcion": "Memoria RAM DDR4 para gaming.",
+              "caracteristicas": {
+                "capacidad": "16 GB",
+                "velocidad": "3200 MHz",
+                "voltaje": "1.35V"
+              },
+              "imagenes": ["vengeance_1.jpg", "vengeance_2.jpg"],
+              "inventario": 20
+            }
+          ]
+        }
+      ],
+      "usuarios": [
+        {
+          "id": 1,
+          "nombre": "Juan Pérez",
+          "email": "juanperez@example.com",
+          "direccion": {
+            "calle": "Calle Principal",
+            "numero": 123,
+            "ciudad": "Madrid",
+            "pais": "España"
+          },
+          "historialCompras": [
+            {
+              "productoId": 201,
+              "cantidad": 1,
+              "fecha": "2023-12-01"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "nombre": "María López",
+          "email": "marialopez@example.com",
+          "direccion": {
+            "calle": "Avenida Secundaria",
+            "numero": 45,
+            "ciudad": "Barcelona",
+            "pais": "España"
+          },
+          "historialCompras": [
+            {
+              "productoId": 301,
+              "cantidad": 2,
+              "fecha": "2023-11-28"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
