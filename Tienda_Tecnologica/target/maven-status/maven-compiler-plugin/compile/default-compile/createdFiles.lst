@@ -1,0 +1,9 @@
+com\mycompany\tienda_tecnologica\Usuario.class
+com\mycompany\tienda_tecnologica\Main.class
+com\mycompany\tienda_tecnologica\Direccion.class
+com\mycompany\tienda_tecnologica\Producto.class
+com\mycompany\tienda_tecnologica\Caracteristicas.class
+com\mycompany\tienda_tecnologica\HistorialCompra.class
+com\mycompany\tienda_tecnologica\BBDD.class
+com\mycompany\tienda_tecnologica\Categoria.class
+com\mycompany\tienda_tecnologica\Tienda.class
