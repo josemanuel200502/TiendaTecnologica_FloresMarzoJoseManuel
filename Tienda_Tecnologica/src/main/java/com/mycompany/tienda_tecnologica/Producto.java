@@ -15,17 +15,14 @@ class Producto {
     private String nombre;
     private double precio;
     private String descripcion;
-    private Caracteristicas caracteristicas;
-    private String [] imagenes;
     private int inventario;
+    private String categoria;
 
-    public Producto(int id, String nombre, double precio, String descripcion, Caracteristicas caracteristicas, String[] imagenes, int inventario) {
+    public Producto(int id, String nombre, double precio, String descripcion, int inventario) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
         this.descripcion = descripcion;
-        this.caracteristicas = caracteristicas;
-        this.imagenes = imagenes;
         this.inventario = inventario;
     }
 
@@ -61,23 +58,6 @@ class Producto {
         this.descripcion = descripcion;
     }
 
-    public Caracteristicas getCaracteristicas() {
-        return caracteristicas;
-    }
-
-    public void setCaracteristicas(Caracteristicas caracteristicas) {
-        this.caracteristicas = caracteristicas;
-    }
-
-    public String[] getImagenes() {
-        return imagenes;
-    }
-
-    public void setImagenes(String[] imagenes) {
-        this.imagenes = imagenes;
-    }
-
-
 
     public int getInventario() {
         return inventario;
@@ -101,7 +81,6 @@ class Producto {
     public void mostrarDetalles() {
         System.out.println("Producto: " + nombre + " - Precio: $" + precio);
         System.out.println("Descripción: " + descripcion);
-        caracteristicas.mostrarDetalles();
     }
 
     }
